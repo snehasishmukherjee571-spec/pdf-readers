@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Viewer</title>
+   <link rel="stylesheet" href="pdf.css">
+</head>
+<body>
+    <div class="viewer-container">
+        <input type="file" id="pdfInput" accept=".pdf">
+        <div class="controls">
+            <button id="zoomOut">-</button>
+            <button id="prevPage">◀</button>
+            <span id="pageNum">Page 1 of 1</span>
+            <button id="nextPage">▶</button>
+            <button id="zoomIn">+</button>
+        </div>
+        <div id="canvas-container">
+            <canvas id="pdfCanvas"></canvas>
+        </div>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="scriptpdf.js">
+       
+    </script>
+</body>
+</html>
